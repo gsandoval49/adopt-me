@@ -12,18 +12,7 @@
     <div id="root">not rendered</div> 
     <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
-    <script>
-        // analogy: this creates a new kind of car. ex. creating honda civic as new line of cars
-        const App = () => {
-            return React.createElement(
-                "div", 
-                {}, 
-                React.createElement("h1", { id: "brand"}, "Adopt Me!")
-            );
-        };
-        
-        // analogy: this creates one individual car and is ready to have multiple options on that car.
-        ReactDOM.render(React.createElement(App), document.getElementById("root"));
-    </script>
+    <!-- NOTE: App.js script tag has to be at the bottom -->
+    <script src="./App.js"></script>
 </body>
 </html>
