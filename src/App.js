@@ -12,6 +12,8 @@ const Pet = (props) => {
 
 // analogy: this creates a new kind of car. ex. creating honda civic as new line of cars
 const App = () => {
+
+    console.log("starting app")
     return React.createElement("div", {}, [
       React.createElement("h1", {}, "Adopt Me!"),
       React.createElement(Pet, {
