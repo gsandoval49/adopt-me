@@ -17,12 +17,12 @@ const App = () => {
       React.createElement(Pet, {
         name: "Paco",
         animal: "Dog",
-        breed: "Chihuah Mix"
+        breed: "Chihuaha Mix"
       }),
       React.createElement(Pet, {
         name: "Pablo",
         animal: "Dog",
-        breed: "Chihuah Mix"
+        breed: "Chihuaha Mix"
       }),
       React.createElement(Pet, {
         name: "Luna",
