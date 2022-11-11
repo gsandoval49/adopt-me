@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
+    "parcel": "^2.2.1",
     "prettier": "^2.7.1"
   }
 }
