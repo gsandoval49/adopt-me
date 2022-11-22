@@ -2,28 +2,16 @@ import React from "react";
 import { render } from "react-dom";
 import Pet from "./Pet";
 
-
-// analogy: this creates a new kind of car. ex. creating honda civic as new line of cars
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, {
-      name: "Paco",
-      animal: "Dog",
-      breed: "Chihuaha Mix",
-    }),
-    React.createElement(Pet, {
-      name: "Pablo",
-      animal: "Dog",
-      breed: "Chihuaha Mix",
-    }),
-    React.createElement(Pet, {
-      name: "Luna",
-      animal: "Dog",
-      breed: "Pug",
-    }),
-  ]);
+  return (
+    <div>
+      <h1>Adopt Me!</h1>
+      <Pet name="Paco" animal="Dog" breed="Chihuahua Mix" />
+      <Pet name="Pablo" animal="Dog" breed="Chihuahua Mix" />
+      <Pet name="Luna" animal="Dog" breed="Pug " />
+    </div>
+  );
 };
 
-// analogy: this creates one individual car and is ready to have multiple options on that car.
-render(React.createElement(App), document.getElementById("root"));
+
+render(<App />, document.getElementById("root"));
