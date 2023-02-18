@@ -30,8 +30,8 @@ const SearchParams = () => {
     <div className="search-params">
       <form
         onSubmit={e => {
-          e.preventDefault();
-          requestPets();
+          e.preventDefault(); 
+          requestPets(); 
         }}
       >
         <label htmlFor="location">
