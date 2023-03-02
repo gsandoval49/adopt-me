@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Results from "./Results";
 import useBreedList from "./useBreedList";
 
@@ -10,12 +10,10 @@ const SearchParams = () => {
   const [breed, updateBreed] = useState("");
   const [pets, setPets] = useState([]);
   const [breeds] = useBreedList(animal);
-  
 
-  useEffect (() => {
+  useEffect(() => {
     requestPets();
-    }, []); //eslint-disable-line react-hooks/exhaustive-deps
-            //he's showing us to remove the eslint error for just this line only. it's a warning but you don't have to fix it. 
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function requestPets() {
     const res = await fetch(
@@ -29,9 +27,9 @@ const SearchParams = () => {
   return (
     <div className="search-params">
       <form
-        onSubmit={e => {
-          e.preventDefault(); 
-          requestPets(); 
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
         }}
       >
         <label htmlFor="location">
@@ -85,7 +83,6 @@ const SearchParams = () => {
         <button>Submit</button>
       </form>
       <Results pets={pets} />
-
     </div>
   );
 };
